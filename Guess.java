@@ -36,7 +36,7 @@ public class Guess{
             Astr = s.nextLine();
             a = Astr.charAt(0);
             
-            //this switch statement was mostly completed in-class with one piece of input validation that was self-completed
+            //this switch statement was mostly completed in class. I added a while loop for input validation.
             switch(a){
             	
             	//yes
@@ -74,7 +74,7 @@ public class Guess{
                         System.out.print("Is this question true for a/an " + animalName + "? Y/N >");
                         yesOrNo = s.next();
                         
-                        //self-completed input validation check
+                        //self-completed input validation
                         while((!yesOrNo.equalsIgnoreCase("n")) && !yesOrNo.equalsIgnoreCase("y")) {
                             System.out.println(yesOrNo +" is invalid. Type either \"Y\" or \"N\".");
                             System.out.print("Is this question true for a/an " + animalName + "? Y/N >");
@@ -127,7 +127,7 @@ public class Guess{
         s.close();
     }
     
-	//this function was completed in-class
+	//this function was completed in class
     public static void writeTree(node r, FileWriter fw, int i) {
     	if(r.yes != null) {
     		
@@ -146,7 +146,7 @@ public class Guess{
     	}
     }
     
-    //this function was partially completed in-class and partially self-guided
+    //this function was partially completed in class and partially self-completed
     public static Tree treeImport() {
     	Tree importTree = new Tree();
     	ArrayList<node> aList = new ArrayList<>();
@@ -157,7 +157,7 @@ public class Guess{
     		String splitBy = ",";
     		String line = br.readLine();
     		
-    		//code from this comment on is no longer instructor-led
+    		//code from this comment on was self-completed for this function
     		while(line !=null) {
     			String[] data = line.split(splitBy);
     			node n = new node(data[1]);
@@ -177,7 +177,7 @@ public class Guess{
     	return importTree;
     }
     
-    //this function is completely self-completed
+    //this function is entirely self-completed
     public static Tree buildTree(ArrayList<node> listOfNodes, int i){
         node currentNode;
         if(i==1){

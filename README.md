@@ -1,5 +1,5 @@
 # animal-guesser
-<h3>General Functionality of Animal Guesser<h3>
+<h1>General Functionality of Animal Guesser</h1>
 <hr/>
 <p>This program reads in questions, animals, and integers representing the position of the node in a binary tree from Animals.csv</p>
 <br/>
